@@ -1,0 +1,151 @@
+<!-- This HTML document demonstrates the use of various HTML5 elements and form controls. It includes an ordered list, an image, a table, and a registration form with various input types. -->
+<!-- My Web Development Week 2 Assignment --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements and Forms</title>
+</head>
+<body>
+    <!-- Ordered list with roman numerals -->
+    <section>
+        <h2>Programming Languages</h2>
+        <ol type="i">
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>Ruby</li>
+        </ol>
+    </section>
+
+    <!-- External image from Pexels -->
+    <section>
+        <h2>Coding Session</h2>
+        <img src="https://www.pexels.com/photo/a-beverage-beside-a-laptop-3857400/" 
+             alt="Person coding on laptop"
+             width="500">
+    </section>
+
+    <!-- Contact Table -->
+    <section>
+        <h2>Contact Directory</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Wabera St</td>
+                    <td>00001-234</td>
+                    <td>john@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Kiarie</td>
+                    <td>Muindi Mbingu St</td>
+                    <td>00001-0124</td>
+                    <td>jane@example.com</td>
+                </tr>
+                <tr>
+                    <td>Bob Wabosha</td>
+                    <td>General Mathenge St</td>
+                    <td>00001-0125</td>
+                    <td>bob@example.com</td>
+                </tr>
+                <tr>
+                    <td>Alice Njeri</td>
+                    <td>Parliament Road</td>
+                    <td>00001-0126</td>
+                    <td>alice@example.com</td>
+                </tr>
+                <tr>
+                    <td>Charles Darwin</td>
+                    <td>Museum Hill</td>
+                    <td>00001-0127</td>
+                    <td>charlie@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="POST">
+            <!-- Name field -->
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required 
+                       placeholder="Enter your full name" minlength="2">
+            </div>
+
+            <!-- Email field -->
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required 
+                       placeholder="Enter your email">
+            </div>
+
+            <!-- Password field -->
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required 
+                       minlength="8" placeholder="Enter your password">
+            </div>
+
+            <!-- Date field -->
+            <div>
+                <label for="birthdate">Date of Birth:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+
+            <!-- Dropdown -->
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="kenya">Kenya</option>
+                    <option value="tanzania">Tanzania</option>
+                    <option value="canada">Canada</option>
+                    <option value="rwanda">Rwandaa</option>
+                </select>
+            </div>
+
+            <!-- Radio buttons -->
+            <div>
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <!-- Checkboxes -->
+            <div>
+                <p>Interests:</p>
+                <input type="checkbox" id="coding" name="interests" value="coding">
+                <label for="coding">Coding</label>
+                <input type="checkbox" id="reading" name="interests" value="reading">
+                <label for="reading">Reading</label>
+                <input type="checkbox" id="traveling" name="interests" value="traveling">
+                <label for="traveling">Traveling</label>
+            </div>
+
+            <!-- Submit button -->
+            <div>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
